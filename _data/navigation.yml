@@ -1,0 +1,9 @@
+- name: RSVP
+  link: /rsvp
+- name: Details
+  link: /
+- name: Photos
+  link: /photos
+- name: Moments
+  link: /moments
+

@@ -1,0 +1,15 @@
+google_analytics_id: G-990T30LLTB
+
+hero_image: photos/wave-right-pastel.jpg
+hero_position: center center
+mobile_hero_image: photos/wave-right-pastel.jpg
+mobile_hero_position: 70% center
+
+theme:
+  text_color: '#471d02'
+  primary_color: '#f5a973'
+  # secondary_color: '#ffc094'
+  secondary_color: '#ff7617'
+  accent_color: '#c46b45'
+  background_color: '#fceee3'
+

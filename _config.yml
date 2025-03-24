@@ -1,0 +1,57 @@
+# Site settings
+#theme: jekyll-theme-easy-wedding
+#remote_theme: curtisullerich/my-jekyll-theme-easy-wedding
+title: Curtis & Meishan
+email: curtis.meishan@gmail.com
+description: "We're getting married and can't wait to celebrate with you!"
+domain: ulleri.ch
+url: http://ulleri.ch
+baseurl: "/reception"
+destination: _site/reception
+
+collections:
+  stories:
+    sort_by: order
+  moments:
+    sort_by: order
+  banners:
+
+sass:
+  style: compressed
+
+defaults:
+  - scope:
+      path: "photos/"
+    values:
+      image: true
+  - scope:
+      type: banners
+    values:
+      layout: banner
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+exclude:
+  - _compress_images_cache.yml
+  - node_modules
+  - yarn.lock
+  - .gitignore
+  - package-lock.json
+  - package.json
+  - LICENSE
+  - README.md
+  - sync.sh
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-compress-images
+  - "jekyll/webpack"
+
+compress_images:
+  images_path: "{assets,photos}/**/*.{gif,png,jpg,jpeg,svg}"
+
+imageoptim:
+  svgo: false

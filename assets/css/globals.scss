@@ -1,0 +1,29 @@
+---
+---
+
+
+.dno-image {
+	max-width: 100%;
+	margin-bottom: 1em;
+}
+
+.rsvp-form {
+	max-width: 100%;
+	height: 170vh;
+}
+
+.centered-heading-2 {
+	text-align: center;
+}
+
+
+@media (max-width: 767px) {
+
+	section[id*="ourstory-"] {
+		padding: 3em 0 5px;
+		overflow: hidden;
+	}
+
+}
+
+

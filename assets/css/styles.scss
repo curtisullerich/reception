@@ -1,0 +1,81 @@
+---
+---
+
+@use "sass:color";
+
+@function text-clr($color) {
+  // This used to just be lightness($color) but that's deprecated.
+  @if (color.channel($color, "lightness", $space: hsl) > 50) {
+    @return #3b1e06;
+  } @else {
+    @return #fff;
+  }
+}
+
+// Theme Variables
+$text-color: {{site.data.settings.theme.text_color | default: "#3b1e06"}};
+$text-color-lighter: color.scale({{site.data.settings.theme.text_color | default: "#3b1e06"}}, $lightness: 70%);
+
+$primary-color: {{site.data.settings.theme.primary_color | default: "#fceadc"}};
+$primary-text-color: text-clr($primary-color);
+$primary-color-darker: color.scale({{site.data.settings.theme.primary_color | default: "#fceadc"}}, $lightness: -10%);
+$primary-text-color-darker: text-clr($primary-color-darker);
+$primary-color-darkest: color.scale({{site.data.settings.theme.primary_color | default: "#fceadc"}}, $lightness: -30%);
+$primary-text-color-darkest: text-clr($primary-color-darkest);
+
+$secondary-color: {{site.data.settings.theme.secondary_color | default: "#f5a973"}};
+$secondary-text-color: text-clr($secondary-color);
+$secondary-color-darker: color.scale({{site.data.settings.theme.secondary_color | default: "#f5a973"}}, $lightness: -10%);
+$secondary-text-color-darker: text-clr($secondary-color-darker);
+$secondary-color-darkest: color.scale({{site.data.settings.theme.secondary_color | default: "#f5a973"}}, $lightness: -30%);
+$secondary-text-color-darkest: text-clr($secondary-color-darkest);
+
+$accent-color: {{site.data.settings.theme.accent_color | default: "#c46b45"}};
+$accent-text-color: text-clr($accent-color);
+$accent-color-darker: color.scale({{site.data.settings.theme.accent_color | default: "#c46b45"}}, $lightness: -10%);
+$accent-text-color-darker: text-clr($accent-color-darker);
+$accent-color-darkest: color.scale({{site.data.settings.theme.accent_color | default: "#c46b45"}}, $lightness: -30%);
+$accent-text-color-darkest: text-clr($accent-color-darkest);
+
+$background-color: {{site.data.settings.theme.background_color | default: "#fcf1e8"}};
+$background-color-lighter: color.scale({{site.data.settings.theme.background_color | default: "#fff"}}, $lightness: 50%);
+
+:root {
+    --intro-background: url({{site.data.settings.hero_image}}) no-repeat center center scroll;
+
+    --intro-background-position: {{site.data.settings.hero_position | default: "center center"}};
+
+    --text-color: #{$text-color};
+    --text-color-lighter: #{$text-color-lighter};
+
+    --primary-color: #{$primary-color};
+    --primary-color-darker: #{$primary-color-darker};
+    --primary-color-darkest: #{$primary-color-darkest};
+    --primary-text-color: #{$primary-text-color};
+    --primary-text-color-darker: #{$primary-text-color-darker};
+    --primary-text-color-darkest: #{$primary-text-color-darkest};
+
+    --secondary-color: #{$secondary-color};
+    --secondary-color-darker: #{$secondary-color-darker};
+    --secondary-color-darkest: #{$secondary-color-darkest};
+    --secondary-text-color: #{$secondary-text-color};
+    --secondary-text-color-darker: #{$secondary-text-color-darker};
+    --secondary-text-color-darkest: #{$secondary-text-color-darkest};
+
+    --accent-color: #{$accent-color};
+    --accent-color-darker: #{$accent-color-darker};
+    --accent-color-darkest: #{$accent-color-darkest};
+    --accent-text-color: #{$accent-text-color};
+    --accent-text-color-darker: #{$accent-text-color-darker};
+    --accent-text-color-darkest: #{$accent-text-color-darkest};
+
+    --background-color: #{$background-color};
+    --background-color-lighter: #{$background-color-lighter};
+
+    @media (max-width: 767px) {
+        {% if site.data.settings.mobile_hero_image %}
+        --intro-background: url({{site.data.settings.mobile_hero_image}}) no-repeat center center scroll;
+        --intro-background-position: {{site.data.settings.mobile_hero_position | default: "center center"}};
+        {% endif %}
+    }
+}

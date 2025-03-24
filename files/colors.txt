@@ -1,0 +1,17 @@
+dark brown: #5d321e
+lighter dark brown: #7e3413
+grayish red orange: #b28258
+gray: #dedad9
+lighter greenish gray: #8e8b75
+greenish gray: #6c7960
+
+$sienna: #7e3413ff;
+$sinopia: #bf521fff;
+$carrot-orange: #e48e32ff;
+$pistachio: #9ec268ff;
+$apple-green: #80b444ff;
+$forest-green: #40852bff;
+$cal-poly-green: #2c4d22ff;
+$moonstone: #74afbbff;
+$lapis-lazuli: #235d88ff;
+$prussian-blue: #1e3957ff;

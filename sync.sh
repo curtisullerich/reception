@@ -1,7 +1,7 @@
 # check if we're in the right directory
 DIR=$(basename $(pwd))
-ULLERICH=$(readlink -f ../ulleri.ch)
-RECEPTION=$(readlink -f .)
+ULLERICH=$(realpath ../ulleri.ch)
+RECEPTION=$(realpath .)
 if [[ $DIR != reception ]]; then
   echo "it doesn't look like you're in the root of the reception repository"
   exit
@@ -37,6 +37,7 @@ rm -r $ULLERICH/reception
 echo "copying"
 cp -r _site/reception $ULLERICH/
 cd $ULLERICH
+git add .
 git commit -a -m "Published latest changes of /reception"
 read -p "continue by pushing ulleri.ch to github?" -n 1 -r
 if [[ ! $REPLY =~ ^[Yy]$ ]]

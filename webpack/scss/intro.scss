@@ -1,0 +1,58 @@
+.intro {
+  display: table;
+  width: 100%;
+  height: 95vh;
+  text-align: left;
+  color: #fff;
+  text-shadow: black 2px 2px 10px;
+  background: var(--intro-background);
+  background-color: #000000;
+  background-position: var(--intro-background-position);
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+@media (min-width: 992px) {
+  /*
+    Only allow background-attachment: fixed for desktop-ish sizes
+    https://twitter.com/paul_irish/status/306818591196602368
+  */
+  .intro {
+    background-attachment: fixed;
+  }
+}
+
+.intro .intro-body {
+  display: table-cell;
+  vertical-align: middle;
+	padding-bottom: 12em;
+}
+
+.brand-heading {
+  font-family: Aniyah, Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  letter-spacing: 0.025em;
+	line-height: 12vw;
+}
+
+.intro-text {
+  font-family: 'Playfair Display', Times, Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 18px;
+}
+
+@media (min-width: 767px) {
+	.intro .intro-body {
+    padding: 0;
+	}
+
+  .brand-heading {
+    font-size: 100px;
+  }
+
+  .intro-text {
+    font-size: 25px;
+  }
+}
