@@ -26,8 +26,8 @@ Please [RSVP]({{ site.baseurl }}/rsvp) so we know how much food to make.
 ---
 
 ***Ullerich Wedding Reception***  
-***Friday, July 11th, 2025 at 16:00 AM***  
-***Attire***   
+Friday, July 11th, 2025 | 4 PM - ?  
+***Attire***: Come as you are  
 ***Location:*** <a href="https://www.google.com/maps/place/Brun+Ko+Farm/@41.5870665,-95.0056998,17z/data=!3m1!4b1!4m6!3m5!1s0x87933355a8c1ee7b:0x1f694b9bdb51470c!8m2!3d41.5870625!4d-95.0031195!16s%2Fg%2F11cmdswhh1?entry=ttu&g_ep=EgoyMDI1MDIwNS4xIKXMDSoASAFQAw%3D%3D">***Brun Ko Farm***</a>  
 
 <i class="fa-solid fa-calendar-days"></i>

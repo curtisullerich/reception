@@ -9,7 +9,7 @@ image_position: center 62%
 ## Appreciation Time!
 <br>
 Our friends Doug and Olivia met us for a camping trip at Valley of Fire State
-Park in November 2024. Doug picked the location, which was new to all of us. It
+Park in December 2024. Doug picked the location, which was new to all of us. It
 was amazing. I (Curtis) have always loved Doug's photos and photography has
 always been a big part of our trips together. We're both so grateful for
 another fun camping trip with Doug and Olivia, this time with the camera turned
