@@ -206,12 +206,18 @@ dd {
   position: relative;
 }
 
-
 .billboard-header {
+  // (Removed the margin so the image would be behind the transparent nav bar.)
   /* Height of nav + 2px bottom border*/
-  // Removed the margin so the image would be behind the transparent nav bar.
   // margin-top: 52px;
   height: 175px;
+}
+
+// This keeps intermediate size screens from cropping our heads off
+@media (min-width: 480px) {
+  .billboard-header {
+    height: 300px;
+  }
 }
 
 .billboard-text {
@@ -237,6 +243,10 @@ dd {
 
   .billboard-header {
     height: 450px;
+    /* 1920 keeps us small enough to avoid getting clipped */
+    max-width: 1920px;
+    /* Keeps the image centered when the viewport is wider than the image */
+    margin: auto;
   }
 
   .billboard-text {
