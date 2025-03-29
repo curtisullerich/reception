@@ -41,7 +41,7 @@ $background-color: {{site.data.settings.theme.background_color | default: "#fcf1
 $background-color-lighter: color.scale({{site.data.settings.theme.background_color | default: "#fff"}}, $lightness: 50%);
 
 :root {
-    --intro-background: url({{site.data.settings.hero_image}}) no-repeat center center scroll;
+    --intro-background: url({{site.baseurl}}/{{site.data.settings.hero_image}}) no-repeat center center scroll;
 
     --intro-background-position: {{site.data.settings.hero_position | default: "center center"}};
 
@@ -74,7 +74,7 @@ $background-color-lighter: color.scale({{site.data.settings.theme.background_col
 
     @media (max-width: 767px) {
         {% if site.data.settings.mobile_hero_image %}
-        --intro-background: url({{site.data.settings.mobile_hero_image}}) no-repeat center center scroll;
+        --intro-background: url({{site.baseurl}}/{{site.data.settings.mobile_hero_image}}) no-repeat center center scroll;
         --intro-background-position: {{site.data.settings.mobile_hero_position | default: "center center"}};
         {% endif %}
     }
